@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhefali </title>
+  <title>Dhefali Creation</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -12,7 +14,7 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 50%, #ffd4eb 100%);
       min-height: 100vh;
       display: flex;
@@ -77,18 +79,28 @@
     }
 
     .logo-circle {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       background: linear-gradient(135deg, #ff1493, #ff69b4);
       border-radius: 50%;
-      margin: 0 auto 20px;
+      margin: 0 auto 25px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 48px;
-      box-shadow: 0 10px 30px rgba(255,20,147,0.3);
+      box-shadow: 0 10px 40px rgba(255,20,147,0.4);
       animation: pulse 2s infinite;
-      border: 5px solid white;
+      border: 6px solid white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-circle::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: none;
     }
 
     @keyframes pulse {
@@ -97,18 +109,23 @@
     }
 
     h1 {
+      font-family: 'Playfair Display', serif;
       color: #c71585;
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 42px;
+      margin-bottom: 12px;
       font-weight: 700;
+      letter-spacing: 2px;
       text-shadow: 2px 2px 4px rgba(199,21,133,0.1);
     }
 
     .subtitle {
+      font-family: 'Poppins', sans-serif;
       color: #ff69b4;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 10px;
-      font-weight: 500;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
     .tagline {
@@ -143,6 +160,8 @@
     .link-card:nth-child(3) { animation-delay: 0.3s; }
     .link-card:nth-child(4) { animation-delay: 0.4s; }
     .link-card:nth-child(5) { animation-delay: 0.5s; }
+    .link-card:nth-child(6) { animation-delay: 0.6s; }
+    .link-card:nth-child(7) { animation-delay: 0.7s; }
 
     @keyframes fadeInUp {
       from {
@@ -215,6 +234,8 @@
     .instagram { border-left: 4px solid #E4405F; }
     .whatsapp { border-left: 4px solid #25D366; }
     .facebook { border-left: 4px solid #1877F2; }
+    .meesho { border-left: 4px solid #9F2089; }
+    .pinterest { border-left: 4px solid #E60023; }
     .phone { border-left: 4px solid #FF6B6B; }
     .catalog { border-left: 4px solid #9B59B6; }
 
@@ -244,7 +265,7 @@
     <div class="profile-section">
       <div class="logo-circle">👗</div>
       <h1>Dhefali</h1>
-      <p class="subtitle">Girls Ethnic Wear</p>
+      <p class="subtitle">Girls Ethnic</p>
       <p class="tagline">✨ Elegance Redefined for Every Little Princess ✨</p>
     </div>
 
@@ -272,6 +293,24 @@
         <div class="link-content">
           <div class="link-title">Facebook</div>
           <div class="link-desc">Join our community</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a class="link-card meesho" href="#" target="_blank">
+        <div class="icon">🛍️</div>
+        <div class="link-content">
+          <div class="link-title">Meesho</div>
+          <div class="link-desc">Shop our collections</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a class="link-card pinterest" href="#" target="_blank">
+        <div class="icon">📌</div>
+        <div class="link-content">
+          <div class="link-title">Pinterest</div>
+          <div class="link-desc">Get style inspiration</div>
         </div>
         <div class="arrow">→</div>
       </a>
